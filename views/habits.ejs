@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/_head.ejs') %>
+<body>
+<%- include('../partials/_header.ejs') %>
+<main role="main" class="container mt-4">
+  <h1>Habits Overview</h1>
+  <% if (habits && habits.length > 0) { %>
+    <div class="list-group">
+      <% habits.forEach(function(habit) { %>
+        <a href="/habits/<%= habit._id %>/challenges" class="list-group-item list-group-item-action">
+          <%= habit.name %>
+        </a>
+      <% }) %>
+    </div>
+  <% } else { %>
+    <p>No habits found. Please add some habits to get started.</p>
+  <% } %>
+</main>
+<%- include('../partials/_footer.ejs') %>
+<script src="/js/main.js"></script>
+</body>
+</html>

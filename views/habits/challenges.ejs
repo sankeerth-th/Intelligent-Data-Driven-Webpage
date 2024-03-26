@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/_head.ejs') %>
+<body>
+<%- include('../partials/_header.ejs') %>
+<main role="main" class="container mt-4">
+  <h1>Level-Up Challenges</h1>
+  <div id="challengeContainer" data-habit-id="<%= habitId %>">
+    <!-- Challenges will be dynamically loaded here using JavaScript -->
+  </div>
+</main>
+<%- include('../partials/_footer.ejs') %>
+<script src="/js/challenges.js"></script>
+</body>
+</html>

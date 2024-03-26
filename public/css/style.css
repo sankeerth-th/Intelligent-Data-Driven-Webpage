@@ -1,0 +1,104 @@
+/* Custom styles for HabitUp Dashboard and Home Page */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+.navbar {
+  background-color: #007bff;
+  margin-bottom: 20px; /* Ensuring there's space below the navbar */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,.75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255,255,255);
+}
+
+.container {
+  padding-top: 20px;
+}
+
+/* Dashboard specific styles */
+#progressChart {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Login and Registration Forms */
+.auth-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #4CAF50; /* Adjusting primary button colors */
+  border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+  border-color: #004085;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer span {
+  font-size: 14px;
+}
+
+/* Ensure text and other elements are well-spaced and readable on all devices */
+.card {
+  margin-bottom: 20px; /* Adding space below cards for better readability */
+}
+
+.list-group-item {
+  margin-bottom: 5px; /* Adding space between list group items */
+}
+
+/* Adjusting navbar for better mobile responsiveness */
+.navbar-brand {
+  font-size: 18px; /* Making the brand font size smaller for mobile devices */
+}
+
+.navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem; /* Reducing padding for nav links on smaller screens */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-bottom: 5px; /* Adding bottom margin for nav items on smaller screens */
+  }
+}
